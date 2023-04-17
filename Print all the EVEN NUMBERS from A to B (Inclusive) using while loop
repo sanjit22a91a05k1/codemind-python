@@ -1,0 +1,7 @@
+# Write your code here using while loop
+n1,n2=map(int,input().split())
+i=n1;
+while(i<=n2):
+    if(i%2==0):
+        print(i,end=" ")
+    i=i+1
