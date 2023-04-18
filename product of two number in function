@@ -1,0 +1,9 @@
+# fun defination
+def product(a,b):
+    # function body     
+    c=a*b
+    print(c)
+    #main function
+a,b=map(int,input().split())
+# function calling
+product(a,b)
