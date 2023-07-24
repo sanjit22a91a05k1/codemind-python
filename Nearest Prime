@@ -1,0 +1,31 @@
+def prime(n):
+    c=0
+    for i in range(1,n+1):
+        if(n%i==0):
+            c+=1
+    if(c==2):
+        return 1
+    else:
+        return 0
+t=int(input())
+for i in range(1, t+1):
+    x=int(input())
+    i=x
+    while(True):
+        if(prime(i)):
+            f=i
+            break
+        i+=1
+    i=x
+    while(True):
+        if(prime(i)):
+            b=i
+            break
+        i-=1
+    d1=abs(f-x)
+    d2=abs(x-b)
+    if(d1>=d2):
+        print(b)
+    else:
+        print(f)
+        
